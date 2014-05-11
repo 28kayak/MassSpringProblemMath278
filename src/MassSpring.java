@@ -23,7 +23,7 @@ public class MassSpring
 		{
 			unitf = 0;
 		}
-		else if(time >= 1)
+		else if(time >= 0)
 		{
 			unitf = 1;
 		}
