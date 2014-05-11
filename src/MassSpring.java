@@ -7,7 +7,7 @@ public class MassSpring
 	double initialSpeed;
 	public MassSpring(double springConst, double initPosition, double initSpeed)
 	{
-		Scanner scan = new Scanner(System.in);
+		//Scanner scan = new Scanner(System.in);
 		//int u;
 		time = 0;
 		k = springConst;
@@ -19,21 +19,17 @@ public class MassSpring
 	{	
 		int unitf = -1;
 		
-		if(time < 5)
+		if(time < 0)
 		{
 			unitf = 0;
 		}
-		else if(time >= 5 && time < 5.1)
+		else if(time >= 1)
 		{
 			unitf = 1;
 		}
-		else if(time >= 5.1)
-		{
-			unitf = 0;
-		}
 		else
 		{
-			System.out.println("bizzar");
+			System.out.printf("\nbizzar %f",time);
 		}
 		
 		return unitf;
